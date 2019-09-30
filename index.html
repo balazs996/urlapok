@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <form name="urlap" method="get" autocomplete="off">
+            <fieldset>
+                <legend>Névfeltöltés</legend>
+            Vezetéknév:
+            <input type="text" name="veznev"/> <br>
+            Keresztnév:
+            <input type="text" name="kernev"/> <br>
+            Neme:
+            <input type="radio" name="no" >Nő<br>
+            <input type="radio" name="ferfi" >Férfi<br>
+            <input type="radio" name="none" >Helikopter<br>
+            <button type="button" onclick="feldolgoz()">Elküld</button>
+        </fieldset>
+
+        </form>
+        <div id="rejto">
+            <p>Ide jön a felhasználó neve: <span id="nev"></span></p>
+        </div>
+        <script src="gyak.js"></script>
+    </body>
+</html>
